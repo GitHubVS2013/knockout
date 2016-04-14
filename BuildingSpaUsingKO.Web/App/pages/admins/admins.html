@@ -1,0 +1,24 @@
+﻿<h2 data-bind="text: title"></h2>
+<hr />
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>User_id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Birthday</th>
+            <th>Phonenumber</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.firstname}}</td>
+            <td>{{user.lastname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.birthday}}</td>
+            <td>{{user.phonenumber}}</td>
+            <td><button class="btn btn-secondary"><a href="#">Edit</a></button></td>
+        </tr>
+    </table>
+</div>

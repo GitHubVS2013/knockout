@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dipping your feet into KnockoutJS Components</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">FibriCheck</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="#users">Users</a></li>
+                    <li><a href="#physicians">Physicians</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                    <li><a href="#admins">Admins</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="page1" class="container" style="padding-top:50px" data-bind="component: { name: route().page, params: route }"></div>
+    <!--<pre data-bind="text: ko.toJSON($data, null, 5)"></pre>-->
+    <footer class="navbar navbar-fixed-bottom">
+        <div class="container-fluid">
+            <p> &copy; 2016 - Qompium</p>
+        </div>
+    </footer>
+    <script src="App/boot/require.config.js"></script>
+    <script src="App/models/User.js"></script>
+    <script src="App/models/Physician.js"></script>
+    <script src="App/models/UserDetails.js"></script>
+    <script src="App/models/Profile.js"></script>
+    <script src="App/models/PhysiciansProfile.js"></script>
+    <script src="App/models/Applications.js"></script>
+    <script data-main="App/boot/startup" src="Scripts/require/require.js"></script>
+</body>
+</html>

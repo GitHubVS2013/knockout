@@ -1,0 +1,29 @@
+﻿<h2 data-bind="text: title"></h2>
+<hr />
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>User_id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th>Phonenumber</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: allUsers">
+            <tr>
+                <td data-bind="text: $data.id"></td>
+                <td data-bind="text: $data.firstname"></td>
+                <td data-bind="text: $data.lastname"></td>
+                <td data-bind="text: $data.email"></td>
+                <td data-bind="text: $data.birthday"></td>
+                <td data-bind="text: $data.phonenumber"></td>
+                <td><button class="btn btn-secondary"><a href="usersDetail">Edit</a></button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
