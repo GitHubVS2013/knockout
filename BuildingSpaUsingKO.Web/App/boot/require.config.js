@@ -5,11 +5,11 @@
         "crossroads": "Scripts/crossroads/crossroads",
         "jquery": "Scripts/jquery/jquery-1.9.0",
         "knockout": "Scripts/knockout/knockout-3.2.0beta.debug",
-        "knockout-mapping": "Scripts/knockout/knockout.mapping-2.4.1",
         "knockout-projections": "Scripts/knockout/knockout-projections.min",
         "signals": "Scripts/crossroads/signals",
         "hasher": "Scripts/crossroads/hasher",
-        "text": "Scripts/require/text"
+        "text": "Scripts/require/text",
+        "datatables": "//datatables.net/download/build/nightly/jquery.dataTables.js?_=99823af74ba032ba950452c707888b11",
     },
     shim: {
         "bootstrap": {

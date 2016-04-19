@@ -7,7 +7,9 @@ define(["jquery","knockout", "crossroads", "hasher"], function ($, ko, crossroad
             { url: 'users', params: { page: 'users' } },
             { url: 'usersDetail', params: { page: 'usersDetail' } },
             { url: 'physicians', params: { page: 'physicians' } },
+            { url: 'physiciansDetail', params: { page: 'physiciansDetail' } },
             { url: 'applications', params: { page: 'applications' } },
+            { url: 'applicationsDetail', params: { page: 'applicationsDetail' } },
             { url: 'admins', params: { page: 'admins' } },
             { url: 'login', params: { page: 'login' } },
             { url: 'settings', params: { page: 'settings' } }

@@ -1,7 +1,7 @@
 ﻿<h2 data-bind="text: title"></h2>
 <hr />
 <div class="container">
-    <table class="table table-bordered table-striped">
+    <table id="users" class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th>User_id</th>
@@ -21,7 +21,7 @@
                 <td data-bind="text: $data.email"></td>
                 <td data-bind="text: $data.birthday"></td>
                 <td data-bind="text: $data.phonenumber"></td>
-                <td><button class="btn btn-secondary"><a href="usersDetail">Edit</a></button></td>
+                <td><button class="btn btn-secondary" onclick="window.location.href='#usersDetail'" data-bind="click: $root.selectedUser">Edit</button></td>
             </tr>
         </tbody>
     </table>

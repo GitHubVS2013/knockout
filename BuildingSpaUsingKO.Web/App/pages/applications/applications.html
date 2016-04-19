@@ -1,7 +1,7 @@
 ﻿<h2 data-bind="text: title"></h2>
 <hr />
 <div class="container">
-    <table class="table table-bordered table-striped">
+    <table id="applications" class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th>Application_id</th>
@@ -15,8 +15,7 @@
                 <td data-bind="text: $data.id"></td>
                 <td data-bind="text: $data.name"></td>
                 <td data-bind="text: $data.description"></td>
-                <td data-bind="text: $data.type"></td>
-                <td><button class="btn btn-secondary"><a href="#">Edit</a></button></td>
+                <td><button class="btn btn-secondary" onclick="window.location.href='#applicationsDetail'">Edit</button></td>
             </tr>
         </tbody>
     </table>

@@ -34,6 +34,12 @@
 
                 self.allPhysicians(physiciansList);
 
+                requirejs(["datatables"], function () {
+                    $('#physicians').dataTable({
+                        physiciansList
+                    });
+                });
+
             },
             error: function (xhr, status) {
                 alert("error");

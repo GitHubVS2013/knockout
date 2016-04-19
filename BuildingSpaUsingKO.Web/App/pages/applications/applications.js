@@ -35,6 +35,12 @@
                 }
 
                 self.allApplications(applicationsList);
+
+                requirejs(["datatables"], function () {
+                    $('#applications').dataTable({
+                        applicationsList
+                    });
+                });
             },
             error: function (xhr, status) {
                 alert("error");

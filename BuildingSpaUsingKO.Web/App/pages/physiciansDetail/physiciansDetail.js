@@ -1,5 +1,5 @@
-﻿define(["knockout", "text!./usersDetail.html"], function (ko, usersDetailTemplate) {
-    function usersDetailViewModel(params) {
+﻿define(["knockout", "text!./physiciansDetail.html"], function (ko, physiciansDetailTemplate) {
+    function physiciansDetailViewModel(params) {
         var self = this;
         self.title = ko.observable('Qompium dashboard');
         //self.guests = ko.observableArray([]);
@@ -8,9 +8,8 @@
         //self.guests.push({ guestName: "Bumblebee" });
 
 
-
         return self;
     }
 
-    return { viewModel: usersDetailViewModel, template: usersDetailTemplate };
+    return { viewModel: physiciansDetailViewModel, template: physiciansDetailTemplate };
 });
